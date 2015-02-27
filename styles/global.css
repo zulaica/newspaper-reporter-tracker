@@ -51,18 +51,33 @@ h3 {
 
 a {
   cursor: pointer;
-  display: block;
 }
+
+a::before {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: .125em;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 100;
+  -webkit-transition-duration: .1s;
+  transition-duration: .1s;
+  }
+  a[href*="github.com"]::before {
+    content: "\f09b";
+  }
+
 li a {
+  display: block;
   height: 34px;
   padding: 6px 12px;
   text-decoration: none !important;
 }
-li a:hover,
-li a:active,
-li a:focus {
-  background: #fff;
-}
+  li a:hover,
+  li a:active,
+  li a:focus {
+    background: #fff;
+  }
 
 .btn,
 .form-control {
@@ -72,4 +87,13 @@ li a:focus {
 ul {
   padding-left: 0;
   list-style: none;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  margin-bottom: 0;
+  padding-top: 10px;
+  border-top: 1px solid #d0dad8;
 }

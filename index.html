@@ -6,7 +6,8 @@
     <title>BeatTracker3000</title>
 
     <link href="//fonts.googleapis.com/css?family=Oswald:400,700|Playfair+Display:400,400italic|Lato:900" rel="stylesheet" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/global.css" />
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.js"></script>
@@ -17,12 +18,19 @@
     <script src="services/UtilitiesFactory.js"></script>
   </head>
   <body>
-    <div class="jumbotron">
+    <header class="jumbotron">
       <h1 class="container">BeatTracker3000</h1>
       <h2 class="container">Not the music kind&thinsp;&mdash;&thinsp;the news reporting kind.</h2>
-    </div>
+    </header>
 
     <div ui-view class="container"></div>
+
+    <footer>
+      <div class="container">
+        <p class="col-md-3 col-md-offset-3"><a href="http://zulaica.info" target="_blank">▶︎▲▼⬆︎▶︎</a> made this.</p>
+        <p class="col-md-3">Source available on <a href="https://github.com/zulaica/newspaper-reporter-tracker" target="_blank">GitHub</a>.</p>
+      </div>
+    </footer>
 
   </body>
 </html>
