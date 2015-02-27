@@ -13,6 +13,7 @@ html {
 
 body {
   background: #eee;
+  margin-bottom: 80px;
 }
 
 .jumbotron {
@@ -54,8 +55,16 @@ h3 {
 }
 
 a {
+  color: #0e745c;
   cursor: pointer;
 }
+  a:hover,
+  a:focus {
+    color: #063026;
+    box-shadow: none;
+    outline: 0 none;
+    text-decoration: underline;
+  }
 
 a::before {
   display: inline-block;
@@ -91,7 +100,7 @@ a::before {
   dt a:hover,
   dt a:active,
   dt a:focus {
-    background: #fff;
+    background: #f6f6f6;
   }
 
 dd {
@@ -103,15 +112,26 @@ dd {
   border-radius: 0;
 }
 
+input:focus,
+input[type]:focus,
+.btn:hover,
+.btn:focus {
+  border-color: #0e745c;
+  box-shadow: 0 1px 1px rgba(14, 116, 92, 0.075) inset, 0 0 3px rgba(14, 116, 92, 0.6);
+  outline: 0 none;
+}
+
 ul {
   padding-left: 0;
   list-style: none;
 }
 
 footer {
+  position: fixed;
   bottom: 0;
-  position: absolute;
   width: 100%;
+  height: inherit;
+  background-color: #f5f5f5;
   margin-bottom: 0;
   padding-top: 10px;
   border-top: 1px solid #d0dad8;

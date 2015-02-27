@@ -3,7 +3,7 @@ beatTracker3000.controller("ReportersCtrl", function ReportersCtrl($scope, $stat
   $scope.addReporter = function() {
     $scope.beat.reporters.push({ name: $scope.reporterName, yearsEmployed: $scope.reporterYearsEmployed, birthday: $scope.reporterBirthday });
     $scope.reporterName = null;
-    $scope.reporterYearsEmployeed = null;
+    $scope.reporterYearsEmployed = null;
     $scope.reporterBirthday = null;
   };
 });
