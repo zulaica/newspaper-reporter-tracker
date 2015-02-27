@@ -22,6 +22,10 @@ body {
   text-shadow: -1px -1px 0 rgba(0,0,0,.2);
 }
 
+.row {
+  margin-bottom: 30px;
+}
+
 h1 {
   font-family: Oswald, sans-serif;
   font-weight: 900;
@@ -60,24 +64,39 @@ a::before {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: 100;
-  -webkit-transition-duration: .1s;
-  transition-duration: .1s;
   }
   a[href*="github.com"]::before {
     content: "\f09b";
   }
 
-li a {
-  display: block;
-  height: 34px;
-  padding: 6px 12px;
-  text-decoration: none !important;
-}
+  li a,
+  dt a {
+    display: block;
+    height: 34px;
+    border-bottom: 1px solid #d0dad8;
+    padding: 6px 12px;
+    text-decoration: none !important;
+  }
+  dt a {
+    border-bottom: 0;
+    border-top: 1px solid #d0dad8;
+  }
+  li:last-of-type a,
+  dt:first-of-type a{
+    border: 0;
+  }
   li a:hover,
   li a:active,
-  li a:focus {
+  li a:focus,
+  dt a:hover,
+  dt a:active,
+  dt a:focus {
     background: #fff;
   }
+
+dd {
+  padding: 6px 12px;
+}
 
 .btn,
 .form-control {
