@@ -5,9 +5,7 @@
       <div class="form-group">
         <input type="text" ng-model="BeatsFactory.beatName" class="form-control" placeholder="Enter a beat name" required/>
       </div>
-      <md-content>
-        <md-button class="md-raised md-primary" ng-disabled="!BeatsFactory.beatName">Add</md-button>
-      </md-content>
+      <md-button class="md-raised md-primary" ng-disabled="!BeatsFactory.beatName">Add</md-button>
     </form>
   </section>
   <section flex ng-show="beats.length">
