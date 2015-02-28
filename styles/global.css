@@ -32,13 +32,13 @@ h1 {
   font-weight: 900;
   letter-spacing: -2px;
 }
-  h1::after {
-    content: "\1f4f0" !important;
-    display: inline-block !important;
-    margin-left: 1rem;
-    color: #0e745c;
-    text-shadow: none;
-  }
+h1::after {
+  content: "\1f4f0" !important;
+  display: inline-block !important;
+  margin-left: 1rem;
+  color: #0e745c;
+  text-shadow: none;
+}
 
 h2 {
   font-family: 'Playfair Display', serif;
@@ -58,13 +58,13 @@ a {
   color: #0e745c;
   cursor: pointer;
 }
-  a:hover,
-  a:focus {
-    color: #063026;
-    box-shadow: none;
-    outline: 0 none;
-    text-decoration: underline;
-  }
+a:hover,
+a:focus {
+  color: #063026;
+  box-shadow: none;
+  outline: 0 none;
+  text-decoration: underline;
+}
 
 a::before {
   display: inline-block;
@@ -73,35 +73,35 @@ a::before {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: 100;
-  }
-  a[href*="github.com"]::before {
-    content: "\f09b";
-  }
+}
+a[href*="github.com"]::before {
+  content: "\f09b";
+}
 
-  li a,
-  dt a {
-    display: block;
-    height: 34px;
-    border-bottom: 1px solid #d0dad8;
-    padding: 6px 12px;
-    text-decoration: none !important;
-  }
-  dt a {
-    border-bottom: 0;
-    border-top: 1px solid #d0dad8;
-  }
-  li:last-of-type a,
-  dt:first-of-type a{
-    border: 0;
-  }
-  li a:hover,
-  li a:active,
-  li a:focus,
-  dt a:hover,
-  dt a:active,
-  dt a:focus {
-    background: #f6f6f6;
-  }
+li a,
+dt a {
+  display: block;
+  height: 34px;
+  border-bottom: 1px solid #d0dad8;
+  padding: 6px 12px;
+  text-decoration: none !important;
+}
+dt a {
+  border-bottom: 0;
+  border-top: 1px solid #d0dad8;
+}
+li:last-of-type a,
+dt:first-of-type a{
+  border: 0;
+}
+li a:hover,
+li a:active,
+li a:focus,
+dt a:hover,
+dt a:active,
+dt a:focus {
+  background: #f6f6f6;
+}
 
 dd {
   padding: 6px 12px;
@@ -127,7 +127,7 @@ ul {
 }
 
 footer {
-  position: fixed;
+  /*position: fixed;*/
   bottom: 0;
   width: 100%;
   height: inherit;

@@ -1,29 +1,31 @@
-<div class="row">
-  <div class="col-md-6">
+<div layout="row">
+  <section flex>
     <h3>Add a beat</h3>
     <form ng-submit="BeatsFactory.addBeat()">
       <div class="form-group">
         <input type="text" ng-model="BeatsFactory.beatName" class="form-control" placeholder="Enter a beat name" required/>
       </div>
-      <button type="submit" class="btn btn-default" ng-disabled="!BeatsFactory.beatName">Add</button>
+      <md-content>
+        <md-button class="md-raised md-primary" ng-disabled="!BeatsFactory.beatName">Add</md-button>
+      </md-content>
     </form>
-  </div>
-  <div class="col-md-4" ng-show="beats.length">
+  </section>
+  <section flex ng-show="beats.length">
     <h3>List of beats</h3>
     <ul>
       <li ng-repeat="item in beats | filter:query | orderBy:'name'">
         <a ui-sref="beats.reporters({ beatId: item.id })">{{ item.name }}</a>
       </li>
     </ul>
-  </div>
-  <div class="col-md-2" ng-show="beats.length">
+  </section>
+  <section flex ng-show="beats.length">
     <h3>Filter</h3>
     <form>
       <div class="form-group">
         <input type="text" ng-model="query" class="form-control" placeholder="Filter the list of beats" />
       </div>
     </form>
-  </div>
+  </section>
 </div>
 
-<div ui-view class="row"></div>
+<div ui-view layout="row"></div>
